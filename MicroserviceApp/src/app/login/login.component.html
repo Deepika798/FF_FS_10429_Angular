@@ -1,0 +1,20 @@
+<form #userlogin="ngForm"(ngSubmit)="onFormSubmit(userlogin.value)">
+    <table>
+        <tr>
+            <td>Email ID</td>
+            <td>
+                <input type="text"name="emailId"formControlName="emailId">
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" formControlName="password"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit"value="Login">
+            </td>
+        </tr>
+ 
+    </table>
+    </form>

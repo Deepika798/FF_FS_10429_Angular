@@ -1,0 +1,23 @@
+<h3>Users Data</h3>
+<ul>
+  <li *ngFor="let item of personData; let i = index">​​​​
+    {{item.id}}
+    {{item.username}}
+  </li>
+</ul>
+<h1> Employee </h1>
+<form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+  <table>
+    <tr>
+      <td><input type="text" name="Name" placeholder="Enter Your Name" formControlName="Name" ngModel></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="Age" placeholder="Enter Your Age" formControlName="Age" ngModel></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="Salary" placeholder="Enter Your Salary" formControlName="Salary" ngModel></td>
+    </tr>
+    <input type="submit" [disabled]="!formdata.valid" class="formsubmit" value="create">
+  </table>
+</form>
+<h3>{{msg}}</h3>

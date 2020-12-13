@@ -1,0 +1,26 @@
+<h3>Users Data</h3>
+ <h2>{{msg1}}</h2>
+<table border=1>
+   <thead>
+     <th>Employee Id</th>
+     <th>Employee Name</th>
+     <th>Employee Salary</th>
+     <th>Employee Age</th>  
+     <th>Action</th>          
+   </thead>
+   <tbody>
+     <tr *ngFor="let item of persondata[1]; let i= index">
+       <td>{{i+1}}</td>
+       <td>{{item.employee_name}}</td>
+       <td>{{item.employee_salary}}</td>
+       <td>{{item.employee_age}}</td> 
+       <td> <button (click)="updateData(item)">Edit </button> | <button (click) = "deleteData(i+1)">Delete </button></td>             
+     </tr>
+   </tbody>
+ </table>
+ <br />
+ 
+<nav> 
+   <a routerLink = "/userhome">Add Employee </a>  
+ </nav> 
+<router-outlet></router-outlet>

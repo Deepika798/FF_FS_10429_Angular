@@ -1,0 +1,17 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>10</y><w>100</w><h>140</h></coordinates><panel_attributes>SimpleClass
+Employee
+--
+-id: int
+-name: String
+--
++createEmployee(int,String): void
++deleteEmployee(int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>10</y><w>100</w><h>140</h></coordinates><panel_attributes>SimpleClass
+Address
+--
+-id: int
+-name: String
+--
++createEmployee(int,String): void
++deleteEmployee(int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>10</x><y>10</y><w>300</w><h>70</h></coordinates><panel_attributes>EmptyPackage
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element></diagram>

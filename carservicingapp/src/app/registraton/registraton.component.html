@@ -1,0 +1,24 @@
+<div style="background-color:greenyellow;">
+<marquee style="color:rgb(68, 6, 17)">Welcome to registration page</marquee>
+<span changeText>{{title}}.</span>
+<form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+    <input type="text" name="username" placeholder="Enter the username" formControlName="username" ngModel>
+    <br />
+    <input type="password" name="password" placeholder="Enter the password" formControlName="password" ngModel>
+    <br />
+    <input type="password" name="confrimPassword" placeholder="Enter the confirmpassword" formControlName="confirmPassword"
+        ngModel>
+    <br />
+    <input type="text" name="FullName" placeholder="Enter Your FullName" formControlName="FullName"
+        ngModel>
+    <br />
+    <input type="text" name="Gender" placeholder="Enter Your Gender" formControlName="Gender" ngModel>
+    <br />
+    <input type="text" name="Age" placeholder="Enter Your Age" formControlName="Age" ngModel>
+    <br />
+    <input type="text" name="ContactNumber" placeholder="Enter Your ContactNumber" formControlName="ContactNumber" ngModel>
+    <br />
+    <br />
+    <input type="submit" value="Register">
+</form>
+</div>

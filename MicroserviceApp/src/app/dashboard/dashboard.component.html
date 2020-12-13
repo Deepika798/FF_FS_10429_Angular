@@ -1,0 +1,58 @@
+<!-- 
+<table border="1">
+ 
+    <tr>
+       <th>Id</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>ContactNumber</th>
+        <th>EmailId</th>
+        <th>Employee Address</th>
+        <th>Action</th>
+    </tr>
+<tbody>
+    <tr *ngFor = "let item of personData; let i= index">
+       <td><button (click)="getDataById(item.empId)">{{item.empId}}</button>
+        <td>{{item.empName}}</td>
+        <td>{{item.empPassword}}</td>
+        <td>{{item.contactNumber}}</td>
+        <td>{{item.emailId}}</td>
+        <td>{{item.empAddress}}</td>
+        <td><button (click)="editData(item.empName,item.empPassword,item.ContactNumber,item.emailId,item.empAddress)">Edit</button>
+         <button (click)="deleteData(item.empId)">Delete</button>
+        </td>
+    </tr>
+</tbody> 
+</table>
+
+<h3>{{msg}}</h3>
+<a routerLink="/addemployee">Add Employee</a>
+{{persondata1}} -->
+<table border="1">
+ 
+    <tr>
+       <th>Id</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>ContactNumber</th>
+        <th>EmailId</th>
+        <th>Employee Address</th>
+        <th>Action</th>
+    </tr>
+<tbody>
+    <tr *ngFor = "let item of personData; let i= index">
+       <td> <button (click)="getDataById(item.empId)">{{item.empId}}</button>
+        <td>{{item.empName}}</td>
+        <td>{{item.empPassword}}</td>
+        <td>{{item.contactNumber}}</td>
+        <td>{{item.emailId}}</td>
+        <td>{{item.empAddress}}</td>
+        <td><button (click)="editData(item.empName,item.empPassword,item.ContactNumber,item.emailId,item.empAddress)">Edit</button>
+         <button (click)="deleteData(item.empId)">Delete</button>
+        </td>
+    </tr>
+</tbody> 
+</table>
+<h3>{{msg}}</h3>
+<a routerLink="/addemployee">Add Employee</a>
+{{persondata1}}

@@ -1,0 +1,21 @@
+<h3>{{msg}}</h3>
+  <form [formGroup] = "formData" (ngSubmit) = "onClickSubmit(formData.value)" >
+  <table>
+    <tr>
+        <td>Name</td>
+        <td><input type="text" name="name" formControlName="name" ngModel={{empname}}></td>
+    </tr>
+    <tr>
+        <td>Salary</td>
+        <td><input type="text" name="salary" formControlName="salary" ngModel={{empsalary}}></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td><input type="text" name="age" formControlName="age" ngModel={{empage}}></td>
+    </tr>
+    <tr>
+     <td><input type="submit" value="Update"></td>
+    </tr>
+  
+  </table>
+  </form>

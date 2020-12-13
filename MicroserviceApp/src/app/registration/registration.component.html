@@ -1,0 +1,70 @@
+<div style="background-color:greenyellow;">
+    <marquee style="color:rgb(68, 6, 17)">Welcome to registration page</marquee>
+    <span changeText>{{title}}.</span>
+    <form [formGroup]="formdata" (ngSubmit)= "onClickSubmit(formdata.value)" >
+        <table>
+            <tr>
+                <td>FullName</td>
+                <td>
+                    <input type="text" name="FullName" placeholder="Enter Your FullName" formControlName="FullName"
+                        ngModel>
+                </td>
+            </tr>
+            <tr>
+                <td>SapCode</td>
+                <td>
+                    <input type="text" name="SapCode" placeholder="Enter Your SapCode" formControlName="SapCode"
+                        ngModel>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password" placeholder="Enter the password" formControlName="password"
+                        ngModel>
+                </td>
+            </tr>
+            <tr>
+                <td>ConfirmPassword</td>
+                <td>
+                    <input type="password" name="confirmPassword" placeholder="Enter the confirmpassword"
+                        formControlName="confirmPassword" ngModel>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>DateOfJoining</td>
+                <td><input type="date" class="fortextbox" name="dateofJoining" placeholder="Enter date of joining"
+                     formControlName="dateofJoining" ngModel>
+                </td>
+            </tr>
+            <tr>
+                <td>Salary</td>
+                <td>
+                    <input type="text" name="Salary" placeholder="Enter Your Salary" formControlName="Salary" ngModel>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" value="male"  name="gender" formControlName="Gender" ngModel>Male
+                    <input type="radio" value="female" name="gender" formControlName="Gender" ngModel>Female
+         
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Age</td>
+                <td>
+                    <input type="text" name="Age" placeholder="Enter Your Age" formControlName="Age" ngModel>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+            <input type="submit" [disabled]="!formdata.valid" class="formsubmit" value="Register">
+            </td>
+            </tr>
+        </table>
+    </form>
+ 
+</div>

@@ -1,0 +1,27 @@
+<marquee style="color:rgb(68, 6, 17)">Welcome to registration page</marquee>
+<h4> {{title|uppercase}} </h4>
+
+<form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+    <input type="text" name="username" placeholder="Enter the username" formControlName="username" ngModel>
+    <br />
+    <input type="password" name="password" placeholder="Enter the password" formControlName="password" ngModel>
+    <br />
+    <input type="password" name="confrimPassword" placeholder="Enter the password" formControlName="confirmPassword"
+        ngModel>
+    <br />
+    <input type="text" name="registrationMonth" placeholder="Enter the month" formControlName="registrationMonth"
+        ngModel>
+    <br />
+    <input type="text" name="preKnowledge" placeholder="Enter preKnowledge" formControlName="preKnowledge" ngModel>
+    <br />
+    <input type="text" name="dateOfJoining" placeholder="Enter the date of joining" value="{{todaydate | date:'d/M/y'}}"
+        formControlName="dateOfJoning" ngModel>
+    <br />
+    <input type="text" name="trainingCost" placeholder="Enter the training cost" value="{{200000 | currency:'INR'}}"
+        formControlName="trainingCost" ngModel>
+    <br />
+    <input type="text" name="hscMark" placeholder="Enter the hsc mark" value="{{00.50000 | percent}}"
+        formControlName="hscMark" ngModel>
+    <br />
+    <input type="submit" value="Register">
+</form>
